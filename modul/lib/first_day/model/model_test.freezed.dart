@@ -23,7 +23,7 @@ mixin _$UserModel {
   int get index => throw _privateConstructorUsedError;
   String get name => throw _privateConstructorUsedError;
   String get lastName => throw _privateConstructorUsedError;
-  String get hobby => throw _privateConstructorUsedError;
+  String get kegiatan => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -36,7 +36,7 @@ abstract class $UserModelCopyWith<$Res> {
   factory $UserModelCopyWith(UserModel value, $Res Function(UserModel) then) =
       _$UserModelCopyWithImpl<$Res, UserModel>;
   @useResult
-  $Res call({int index, String name, String lastName, String hobby});
+  $Res call({int index, String name, String lastName, String kegiatan});
 }
 
 /// @nodoc
@@ -55,7 +55,7 @@ class _$UserModelCopyWithImpl<$Res, $Val extends UserModel>
     Object? index = null,
     Object? name = null,
     Object? lastName = null,
-    Object? hobby = null,
+    Object? kegiatan = null,
   }) {
     return _then(_value.copyWith(
       index: null == index
@@ -70,9 +70,9 @@ class _$UserModelCopyWithImpl<$Res, $Val extends UserModel>
           ? _value.lastName
           : lastName // ignore: cast_nullable_to_non_nullable
               as String,
-      hobby: null == hobby
-          ? _value.hobby
-          : hobby // ignore: cast_nullable_to_non_nullable
+      kegiatan: null == kegiatan
+          ? _value.kegiatan
+          : kegiatan // ignore: cast_nullable_to_non_nullable
               as String,
     ) as $Val);
   }
@@ -86,7 +86,7 @@ abstract class _$$UserModelImplCopyWith<$Res>
       __$$UserModelImplCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call({int index, String name, String lastName, String hobby});
+  $Res call({int index, String name, String lastName, String kegiatan});
 }
 
 /// @nodoc
@@ -103,7 +103,7 @@ class __$$UserModelImplCopyWithImpl<$Res>
     Object? index = null,
     Object? name = null,
     Object? lastName = null,
-    Object? hobby = null,
+    Object? kegiatan = null,
   }) {
     return _then(_$UserModelImpl(
       index: null == index
@@ -118,9 +118,9 @@ class __$$UserModelImplCopyWithImpl<$Res>
           ? _value.lastName
           : lastName // ignore: cast_nullable_to_non_nullable
               as String,
-      hobby: null == hobby
-          ? _value.hobby
-          : hobby // ignore: cast_nullable_to_non_nullable
+      kegiatan: null == kegiatan
+          ? _value.kegiatan
+          : kegiatan // ignore: cast_nullable_to_non_nullable
               as String,
     ));
   }
@@ -128,12 +128,13 @@ class __$$UserModelImplCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$UserModelImpl implements _UserModel {
+class _$UserModelImpl extends _UserModel {
   const _$UserModelImpl(
       {required this.index,
       required this.name,
       required this.lastName,
-      required this.hobby});
+      required this.kegiatan})
+      : super._();
 
   factory _$UserModelImpl.fromJson(Map<String, dynamic> json) =>
       _$$UserModelImplFromJson(json);
@@ -145,11 +146,11 @@ class _$UserModelImpl implements _UserModel {
   @override
   final String lastName;
   @override
-  final String hobby;
+  final String kegiatan;
 
   @override
   String toString() {
-    return 'UserModel(index: $index, name: $name, lastName: $lastName, hobby: $hobby)';
+    return 'UserModel(index: $index, name: $name, lastName: $lastName, kegiatan: $kegiatan)';
   }
 
   @override
@@ -161,12 +162,13 @@ class _$UserModelImpl implements _UserModel {
             (identical(other.name, name) || other.name == name) &&
             (identical(other.lastName, lastName) ||
                 other.lastName == lastName) &&
-            (identical(other.hobby, hobby) || other.hobby == hobby));
+            (identical(other.kegiatan, kegiatan) ||
+                other.kegiatan == kegiatan));
   }
 
   @JsonKey(ignore: true)
   @override
-  int get hashCode => Object.hash(runtimeType, index, name, lastName, hobby);
+  int get hashCode => Object.hash(runtimeType, index, name, lastName, kegiatan);
 
   @JsonKey(ignore: true)
   @override
@@ -182,12 +184,13 @@ class _$UserModelImpl implements _UserModel {
   }
 }
 
-abstract class _UserModel implements UserModel {
+abstract class _UserModel extends UserModel {
   const factory _UserModel(
       {required final int index,
       required final String name,
       required final String lastName,
-      required final String hobby}) = _$UserModelImpl;
+      required final String kegiatan}) = _$UserModelImpl;
+  const _UserModel._() : super._();
 
   factory _UserModel.fromJson(Map<String, dynamic> json) =
       _$UserModelImpl.fromJson;
@@ -199,7 +202,7 @@ abstract class _UserModel implements UserModel {
   @override
   String get lastName;
   @override
-  String get hobby;
+  String get kegiatan;
   @override
   @JsonKey(ignore: true)
   _$$UserModelImplCopyWith<_$UserModelImpl> get copyWith =>
