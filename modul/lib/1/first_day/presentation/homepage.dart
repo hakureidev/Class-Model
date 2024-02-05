@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:modul/first_day/model/model_test.dart';
+import 'package:modul/1/first_day/model/model_test.dart';
+
 
 class MyWidget extends StatefulWidget {
   const MyWidget({Key? key}) : super(key: key);
