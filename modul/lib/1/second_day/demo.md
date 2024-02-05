@@ -13,4 +13,4 @@ Pokoknya, Clean Architecture bikin aplikasi jadi lebih mudah diatur, gampang dip
 
 ## Demo
 
-https://github.com/hakureidev/Class-Model/assets/129695871/0e49b016-1566-41b5-a31a-999c6204561c
+https://github.com/hakureidev/Class-Model/assets/129695871/58b47609-28e5-4a3e-9549-644b6d29fa18
