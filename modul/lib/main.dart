@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:modul/first_day/presentation/homepage.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-void main(List<String> args) {
-  runApp(MyApp());
+import 'package:modul/1/second_day/presentation/view/page.dart';
+
+void main(List<String> args) async {
+  await dotenv.load(fileName: '.env');
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -16,7 +19,7 @@ class MyApp extends StatelessWidget {
         textTheme: GoogleFonts.poppinsTextTheme(Theme.of(context).textTheme),
       ),
       debugShowCheckedModeBanner: false,
-      home: MyWidget(),
+      home: const MyCompany(),
     );
   }
 }

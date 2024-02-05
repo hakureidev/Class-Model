@@ -1,5 +1,7 @@
 ## Prolog 
 
+Di Repository kali ini ,kita akan mempelajari pengunaan dari class model , dan pengunaan navigator pada flutter.
+
 -- DAY 1
 Belajar mengenai pembuatan / pengunaan class model mengunakan packages frezzed serta membuat repository dari Api mengunakan flutter ...
 
